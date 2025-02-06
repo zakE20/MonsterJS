@@ -39,7 +39,7 @@ ctx.stroke();
 ctx.beginPath();
 ctx.arc(260, 270, 8, 0, 2 * Math.PI);
 ctx.arc(340, 270, 8, 0, 2 * Math.PI);
-ctx.fillStyle = "black";
+ctx.fillStyle = "blue";
 ctx.fill();
 
 // Nez 
