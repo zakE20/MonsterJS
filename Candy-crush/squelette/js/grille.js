@@ -52,13 +52,13 @@ export default class Grille {
 
       console.log(`🔄 Tentative de swap entre (${cookie1.ligne},${cookie1.colonne}) et (${cookie2.ligne},${cookie2.colonne})`);
 
-      Cookie.swapCookies(cookie1, cookie2); // Échanger les cookies
+      Cookie.swapCookies(cookie1, cookie2); //swap les cookies
 
-      console.log("Vérification des alignements après swap...");
+      console.log("verification des alignements après swap");
       let cookiesAEliminer = this.detecterAlignements(); // Détecter les alignements
 
       if (cookiesAEliminer.length > 0) {
-        console.log("Alignements détectés, suppression en cours...");
+        console.log("alignements détectés, suppression en cours");
         this.eliminerAlignements(); // Éliminer les alignements
       } else {
         console.log("Aucun alignement détecté, annulation du swap.");
@@ -69,7 +69,7 @@ export default class Grille {
     }
   }
 
-  // Remplir la grille avec des cookies aléatoires
+  //remplir la grille avec des cookies aléatoires
   remplirTableauDeCookies(nbDeCookiesDifferents) {
     let tab = create2DArray(this.l);
 
@@ -83,11 +83,11 @@ export default class Grille {
     return tab;
   }
 
-  // Détecter les alignements de cookies
+  //detecter les alignements de cookies
   detecterAlignements() {
     let cookiesAEliminer = [];
 
-    console.log("🔍 Début de la détection des alignements...");
+    console.log("Début de la détection des alignements...");
 
     // Vérification horizontale
     for (let l = 0; l < this.l; l++) {

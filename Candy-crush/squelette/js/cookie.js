@@ -49,7 +49,6 @@ export default class Cookie {
 
   isSelectionnee() {
     // on regarde si l'image a la classe CSS "cookies-selected"
-    // A FAIRE
     return this.htmlImage.classList.contains("cookies-selected");
   }
 
@@ -58,7 +57,6 @@ export default class Cookie {
     // On doit mettre à la place de l'URL classique, l'URL de l'image
     // surlignée correspondant au type de cookie. Voir la propriété
     // statique de la classe Cookie, urlsImagesSurlignees
-    // A FAIRE
     this.htmlImage.src = Cookie.urlsImagesSurlignees[this.type];
     // On va ajouter la classe CSS "cookies-selected" à
     // l'image du cookie
@@ -68,7 +66,6 @@ export default class Cookie {
 
   deselectionnee() {
     // on change l'image et la classe CSS
-    // A FAIRE
     this.htmlImage.src = Cookie.urlsImagesNormales[this.type];
     // On va ajouter la classe CSS "cookies-selected" à
     // l'image du cookie
@@ -76,10 +73,7 @@ export default class Cookie {
   }
 
   static swapCookies(c1, c2) {
-    // A FAIRE
     console.log("On essaie SWAP C1 C2");
-   
-
     // On regarde la distance entre les deux cookies
     // si elle est de 1, on peut les swapper
     const dist = Cookie.distance(c1, c2);

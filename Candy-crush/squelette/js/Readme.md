@@ -12,7 +12,7 @@ Ce projet est une version simplifiée du jeu Candy Crush développée en JavaScr
 
 ## Fonctionnalités à Implémenter
 
-### 1️-Détection des combinaisons
+### 1️-Détection des combinaisons//ok
 - Vérifier si un mouvement entraîne un alignement **horizontal** ou **vertical** de 3 cookies ou plus.
 - Mettre en place une fonction qui détecte les **combinaisons valides** après chaque échange.
 
